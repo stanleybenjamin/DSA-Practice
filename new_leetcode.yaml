@@ -1,0 +1,814 @@
+patterns:
+  Core_Linear_Patterns:
+    Arrays:
+      - traversal
+      - indexing
+      - in-place modification
+      - simulation
+      - compaction
+      - rearrangement
+
+    Strings:
+      - traversal
+      - parsing
+      - string building
+      - character counting
+      - substring reasoning
+
+    Hashing:
+      - Hash Map
+      - Hash Set
+      - frequency counting
+      - index mapping
+      - deduplication
+      - lookup acceleration
+
+    Two_Pointers:
+      Opposite_Direction:
+        idea: "Start from both ends and move inward according to a rule."
+        common_uses:
+          - pair sum in sorted array
+          - palindrome checks
+          - container with most water
+          - pair-based greedy matching
+
+      Same_Direction:
+        idea: "Two pointers move forward together, often maintaining a valid range."
+        common_uses:
+          - remove duplicates in sorted array
+          - partitioning
+          - in-place compaction
+          - longest valid segment
+
+      Fast_Slow:
+        idea: "Pointers move at different speeds."
+        common_uses:
+          - cycle detection
+          - linked list middle
+          - cycle-based duplicate detection
+
+      Merge_Style:
+        idea: "Traverse two sorted inputs together."
+        common_uses:
+          - merge sorted arrays/lists
+          - intersection of sorted arrays
+          - interval merging after sorting
+
+      Partition_Write_Pointer:
+        idea: "Maintain a write boundary while scanning."
+        common_uses:
+          - move zeros
+          - stable compaction
+          - Dutch National Flag variants
+
+    Sliding_Window:
+      Fixed_Window:
+        - fixed-length subarray aggregation
+        - rolling sum / average
+        - frequency window
+
+      Variable_Window:
+        - longest subarray satisfying condition
+        - shortest subarray satisfying condition
+        - at most k distinct
+        - minimum window substring
+
+    Prefix_And_Suffix_Techniques:
+      - Prefix Sum
+      - Prefix XOR
+      - Prefix Product
+      - Prefix Min/Max
+      - Suffix Min/Max
+      - Prefix Sum Hashmap
+      - Prefix Sum Counting
+      - Prefix/Suffix Decomposition
+      - Difference Array
+
+    Counting_And_Frequency:
+      - character frequency
+      - bucket counting
+      - majority vote
+      - frequency map with greedy
+      - counting sort style reasoning
+
+    Sorting_Plus_Scan:
+      - sort and merge
+      - sort and sweep
+      - custom comparator + local decisions
+      - sort then two pointers
+
+    Specialized_Array_Patterns:
+      - Kadane's Algorithm
+      - Cyclic Sort
+      - Boyer-Moore Majority Vote
+      - K-Sum Pattern
+
+  Core_Data_Structures:
+    Linear:
+      - Stack
+      - Queue
+      - Deque
+      - Circular Queue
+
+    Linked_List_Patterns:
+      - dummy node
+      - reversal
+      - fast/slow pointers
+      - cycle detection
+      - merge two lists
+      - split and reconnect
+
+    Hash_Based:
+      - Hash Map
+      - Hash Set
+
+    Ordered:
+      - Ordered Set / TreeSet
+      - Ordered Map / TreeMap
+
+    Heap_Priority_Queue:
+      - Min Heap
+      - Max Heap
+      - Two Heaps Pattern
+      - Top K Elements
+      - Running Median
+      - K-Way Merge
+      - Best-first extraction
+
+    Specialized:
+      - Trie
+      - Union Find
+      - BitSet / BitVector
+      - MinMax Stack
+      - MinMax Queue
+
+    Matrix_And_Grid:
+      - Matrix
+      - Grid representation
+      - adjacency by direction vectors
+
+  Trees:
+    Tree_Types:
+      - Binary Tree
+      - Binary Search Tree
+      - N-ary Tree
+
+    Traversal:
+      - Preorder
+      - Inorder
+      - Postorder
+      - Level Order
+      - Iterative Traversal
+
+    Binary_Tree_Patterns:
+      - depth / height
+      - balanced tree
+      - path sum
+      - diameter
+      - subtree matching
+      - serialize / deserialize
+      - top-down DFS
+      - bottom-up DFS
+
+    BST_Patterns:
+      - inorder gives sorted order
+      - validate BST
+      - kth smallest / largest
+      - predecessor / successor
+      - range queries in BST
+
+    Important_Techniques:
+      - Lowest Common Ancestor
+      - Tree DP
+      - rerooting
+      - DFS with return value
+      - DFS with global answer
+
+  Graph_Algorithms:
+    Graph_Representations:
+      - Adjacency List
+      - Adjacency Matrix
+      - Edge List
+
+    Traversal:
+      - BFS
+      - DFS
+      - Multi-source BFS
+      - Bidirectional BFS
+
+    Shortest_Path:
+      - BFS on unweighted graph
+      - 0-1 BFS
+      - Dijkstra
+      - Bellman-Ford
+      - Floyd-Warshall
+      - A* Search
+
+    DAG:
+      - Topological Sort
+      - Kahn's Algorithm
+      - DFS Topological Ordering
+      - DP on DAG
+
+    Connectivity:
+      - Connected Components
+      - Strongly Connected Components
+      - Bridges
+      - Articulation Points
+      - Bipartite Check
+      - cycle detection
+
+    MST:
+      - Kruskal
+      - Prim
+
+    Advanced_Graph_Patterns:
+      - Eulerian Path / Circuit
+      - graph state compression
+      - shortest path with extra state
+      - Union Find graph applications
+
+  Range_Query_And_Interval_Structures:
+    Static_Techniques:
+      - Prefix Sum
+      - Prefix XOR
+      - Sparse Table
+
+    Dynamic_Techniques:
+      - Fenwick Tree
+      - Segment Tree
+      - Segment Tree with Lazy Propagation
+
+    Interval_Tracking:
+      - Ordered Map for intervals
+      - Ordered Set for event points
+      - Interval Tree
+
+  Searching_And_Sorting:
+    Binary_Search:
+      - exact search
+      - lower_bound
+      - upper_bound
+      - first true / last false
+      - search on monotonic predicate
+      - Binary Search on Answer
+      - search in rotated sorted array
+
+    Sorting:
+      - Merge Sort
+      - QuickSort
+      - Counting Sort
+      - Radix Sort
+      - Bucket Sort
+      - Custom Sorting
+
+    Selection:
+      - QuickSelect
+      - kth smallest / largest
+      - median selection ideas
+
+    Merge_Based_Techniques:
+      - inversion counting
+      - merge intervals after sorting
+      - merge multiple sorted sources
+
+  Recursion_And_Backtracking:
+    Fundamental_Patterns:
+      - choose / skip
+      - choose from remaining
+      - choose from full domain
+      - build path incrementally
+      - backtrack after decision
+
+    Combinations_And_Subsets:
+      - Combinations
+      - Combination Sum
+      - Combination Sum II
+      - Combination Sum III
+      - Subsets
+      - Subsets II
+      - Partition to K Equal Sum Subsets
+
+    Permutations_And_Arrangements:
+      - Permutations
+      - Permutations II
+      - Letter Tile Possibilities
+      - ordering under constraints
+
+    String_Partitioning:
+      - Palindrome Partitioning
+      - Restore IP Addresses
+      - Expression Add Operators
+      - split string under constraints
+
+    Grid_And_Board_Search:
+      - Word Search
+      - Word Search II
+      - Unique Paths III
+      - Path with Maximum Gold
+      - Knight's Tour
+
+    Constraint_Satisfaction:
+      - N-Queens
+      - Sudoku Solver
+      - Matchsticks to Square
+      - Beautiful Arrangement
+
+    Toolkit:
+      State_Tracking:
+        - bitmasking
+        - swapping_in_place
+        - frequency counting
+        - visited sets
+        - trie traversal
+
+      Pruning:
+        - constraint propagation
+        - bounding
+        - symmetry breaking
+        - early termination
+
+      Heuristics:
+        - variable ordering
+        - value ordering
+
+      Optimization:
+        - memoization
+        - iterative backtracking
+        - meet in the middle
+
+      Preprocessing:
+        - sorting
+        - hashing
+        - candidate reduction
+
+  Dynamic_Programming:
+    One_Dimensional_DP:
+      - Climbing Stairs
+      - House Robber
+      - Min Cost Climbing Stairs
+      - Kadane's Algorithm
+      - Perfect Squares
+
+    Two_Dimensional_And_Grid_DP:
+      - Unique Paths
+      - Unique Paths II
+      - Minimum Path Sum
+      - Dungeon Game
+      - Out of Boundary Paths
+
+    Sequence_DP:
+      - Longest Increasing Subsequence
+      - Longest Common Subsequence
+      - Longest Common Substring
+      - Edit Distance
+      - Delete Operation for Two Strings
+      - Minimum ASCII Delete Sum
+
+    Knapsack_Variants:
+      Zero_One_Knapsack:
+        - Partition Equal Subset Sum
+        - Target Sum
+        - Ones and Zeroes
+
+      Unbounded_Knapsack:
+        - Coin Change
+        - Coin Change II
+        - Perfect Squares
+
+      Bounded_Knapsack:
+        - Profitable Schemes
+        - Number of Dice Rolls With Target Sum
+        - bounded item selection
+
+    Palindrome_DP:
+      - Longest Palindromic Substring
+      - Longest Palindromic Subsequence
+      - Palindromic Substrings
+      - Minimum Insertions to Make Palindrome
+
+    Interval_DP:
+      - Burst Balloons
+      - polygon triangulation
+      - matrix-chain style partitioning
+      - palindrome interval DP
+
+    Tree_And_Graph_DP:
+      - House Robber III
+      - Binary Tree Maximum Path Sum
+      - Binary Tree Cameras
+      - Sum of Distances in Tree
+      - rerooting DP
+      - DAG DP
+
+    State_Machine_DP:
+      - stock buy/sell variants
+      - cooldown / fee transitions
+      - hold / not hold states
+
+    Bitmask_DP:
+      - Shortest Path Visiting All Nodes
+      - Smallest Sufficient Team
+      - assignment / subset cover DP
+
+    Digit_DP:
+      - Number of Digit One
+      - Numbers At Most N Given Digit Set
+      - Count of Integers
+
+    Probability_DP:
+      - Knight Probability in Chessboard
+      - Toss Strange Coins
+      - New 21 Game
+
+    Game_Theory_DP:
+      - Nim Game
+      - Predict the Winner
+      - Stone Game variants
+      - minimax with memoization
+
+    Combinatorial_DP:
+      - Unique Binary Search Trees
+      - Distinct Subsequences
+      - Combination Sum IV
+      - counting ways with transitions
+
+  Greedy:
+    Interval_Scheduling:
+      - non-overlapping interval selection
+      - interval removal / minimum deletions
+      - minimum points to cover intervals
+      - meeting scheduling
+      - deadline-based selection
+
+    Sorting_Based_Greedy:
+      - sort by start / end time
+      - sort by value density
+      - sort by smallest / largest first
+      - custom comparator ordering
+      - pair greedily after sorting
+
+    Prefix_Suffix_Feasibility:
+      - running balance
+      - surplus / deficit tracking
+      - gas station style feasibility
+      - candy distribution
+      - prefix validity decisions
+
+    Frontier_Expansion:
+      - farthest reachable frontier
+      - maintain current range and next range
+      - local best extension
+      - one-pass jump reasoning
+
+    Heap_Based_Greedy:
+      - minimum rooms / platforms
+      - choose best available reward so far
+      - assign resource to earliest finishing task
+      - scheduling with limited resources
+
+    Graph_Greedy:
+      - Prim
+      - Kruskal
+      - Dijkstra on non-negative weights
+
+    Jump_Game_Variants:
+      - reachability
+      - minimum jumps
+      - backward target shrinking
+      - greedy window expansion
+
+    Monotonic_Stack_Greedy:
+      - remove digits / letters for lexicographically optimal result
+      - maintain increasing / decreasing candidates
+      - greedy deletions with stack
+
+    Rearrangement_And_Matching:
+      - pair smallest with largest
+      - assign resources to demands
+      - avoid adjacent conflicts
+      - lexicographically smallest / largest construction
+
+    Sweep_Line_Greedy:
+      - process starts and ends in order
+      - event-based overlap counting
+      - active set maintenance
+      - event-driven decisions
+
+    Exchange_Argument_Greedy:
+      - earliest finish first proofs
+      - canonical comparator proofs
+      - local swap improves solution
+      - optimal merge / combine style reasoning
+
+  Monotonic_Data_Structures:
+    Monotonic_Stack:
+      - next greater element
+      - next smaller element
+      - previous greater / smaller
+      - stock span
+      - histogram area
+      - rectangle boundary problems
+      - circular array variants
+
+    Monotonic_Queue:
+      - Sliding Window Maximum
+      - window minimum / maximum
+      - shortest subarray with monotonic prefix handling
+      - streaming extrema
+
+  Intervals_And_Sweep_Line:
+    Basic_Intervals:
+      - Merge Intervals
+      - Insert Interval
+      - Interval Overlap
+      - Meeting Rooms
+      - interval stabbing
+      - concurrent interval counting
+
+    Sweep_Line:
+      - event sorting
+      - delta / difference event accumulation
+      - active set maintenance
+      - overlap counting
+      - room / platform allocation
+      - skyline style processing
+
+    Advanced_Interval_Problems:
+      - Range Module
+      - line segment coverage
+      - interval map maintenance
+      - offline query processing
+
+  String_Algorithms:
+    Basic_String_Patterns:
+      - String Manipulation
+      - Anagram Problems
+      - substring scanning
+      - split / join / normalize
+
+    Pattern_Matching:
+      - KMP Algorithm
+      - Z-Algorithm
+      - Rabin-Karp / Rolling Hash
+      - Boyer-Moore
+
+    Trie_Based_String_Processing:
+      - Trie Operations
+      - prefix matching
+      - dictionary replacement
+      - word search with trie
+      - multi-word lookup
+
+    Multi_Pattern_Matching:
+      - Aho-Corasick
+
+    Suffix_Based_Techniques:
+      - Suffix Array
+      - LCP Array
+      - Kasai's Algorithm
+      - prefix doubling construction
+
+    Palindrome_Algorithms:
+      - Expand Around Center
+      - Manacher's Algorithm
+
+    String_DP:
+      - Regular Expression Matching
+      - wildcard matching
+      - edit-style transitions
+
+  Math_And_Bit:
+    Math_And_Number_Theory:
+      - Basic Math
+      - Geometry Basics
+      - GCD / LCM
+      - Euclidean Algorithm
+      - Prime Testing
+      - Sieve of Eratosthenes
+      - Prime Factorization
+      - Modular Arithmetic
+      - Modular Inverse
+      - Fermat's Little Theorem
+      - Fast Power
+      - Matrix Exponentiation
+      - Combinatorics
+      - Pascal's Triangle
+      - Coordinate Compression
+
+    Bit_Manipulation:
+      - Basic Bit Operations
+      - XOR Properties
+      - Brian Kernighan's Algorithm
+      - Bit Masking
+      - Power of Two
+      - Single Number Problems
+      - Counting Bits
+      - subset iteration by bitmask
+
+  Geometry:
+    Foundational:
+      - point distance
+      - slope / orientation
+      - line intersection
+      - rectangle overlap
+      - rotation / reflection / translation
+      - fitting shapes
+
+    Sweep_Geometry:
+      - Sweep Line / Plane Sweep
+      - active interval tracking
+      - event ordering
+
+    Convex_Hull:
+      - Graham Scan
+      - Monotone Chain
+      - Jarvis March
+
+    Divide_And_Conquer_Geometry:
+      - Closest Pair of Points
+      - divide-and-conquer geometry patterns
+
+    Geometry_On_Grids:
+      - maximal rectangle
+      - largest plus sign
+      - polygon triangulation
+      - graph interpretation of geometric grids
+
+  Design_Problems:
+    Classic_Designs:
+      - LRU Cache
+      - LFU Cache
+      - Min Stack
+      - Randomized Set / Map
+      - Implement Queue using Stacks
+      - Implement Stack using Queues
+      - Design HashMap
+      - Design HashSet
+
+    Stream_And_Time_Based:
+      - Rate Limiter
+      - Hit Counter
+      - moving average from stream
+      - recent event tracking
+
+  Study_Order:
+    Beginner:
+      - Arrays
+      - Strings
+      - Hashing
+      - Two Pointers
+      - Sliding Window
+      - Prefix Sum
+      - Binary Search
+      - Stack
+      - Queue
+      - Linked List
+      - Tree Traversal
+      - BFS
+      - DFS
+      - basic recursion
+      - basic backtracking
+
+    Intermediate:
+      - Heap / Priority Queue
+      - Trie
+      - Union Find
+      - Topological Sort
+      - Intervals
+      - Greedy
+      - basic 1D and 2D DP
+      - Monotonic Stack
+      - Bit Manipulation
+
+    Advanced:
+      - Segment Tree
+      - Fenwick Tree
+      - Dijkstra
+      - advanced graph traversal
+      - String Algorithms
+      - State Machine DP
+      - Bitmask DP
+      - Digit DP
+      - Binary Search on Answer
+
+    Expert:
+      - rerooting DP
+      - advanced graph decomposition
+      - computational geometry
+      - complex design problems
+      - advanced combinatorial optimization
+
+  LeetCode_Pattern_Frequency:
+    Very_High:
+      - Arrays
+      - Strings
+      - Hashing
+      - Two Pointers
+      - Sliding Window
+      - Binary Search
+      - BFS / DFS
+      - Tree Traversals
+      - basic Dynamic Programming
+
+    High:
+      - Heap / Priority Queue
+      - Stack
+      - Greedy
+      - Backtracking
+      - Intervals
+      - Union Find
+      - Trie
+      - Prefix Sum
+
+    Medium:
+      - Topological Sort
+      - Monotonic Stack
+      - Graph Shortest Path
+      - Bit Manipulation
+      - Design Problems
+      - String Matching
+
+    Low:
+      - Segment Tree
+      - Advanced String Algorithms
+      - Computational Geometry
+      - Game Theory DP
+
+  Problem_Examples:
+    Two_Pointers:
+      - Two Sum II
+      - Valid Palindrome
+      - Container With Most Water
+      - 3Sum
+
+    Sliding_Window:
+      - Longest Substring Without Repeating Characters
+      - Minimum Window Substring
+      - Permutation in String
+      - Longest Repeating Character Replacement
+
+    Prefix_Sum:
+      - Subarray Sum Equals K
+      - Continuous Subarray Sum
+      - Product of Array Except Self
+      - Range Sum Query
+
+    Binary_Search:
+      - Binary Search
+      - Search in Rotated Sorted Array
+      - Find Peak Element
+      - Koko Eating Bananas
+
+    Trees:
+      - Maximum Depth of Binary Tree
+      - Diameter of Binary Tree
+      - Lowest Common Ancestor
+      - Validate Binary Search Tree
+
+    Graphs:
+      - Number of Islands
+      - Course Schedule
+      - Clone Graph
+      - Network Delay Time
+      - Cheapest Flights Within K Stops
+
+    Backtracking:
+      - Subsets
+      - Permutations
+      - Combination Sum
+      - N-Queens
+      - Word Search
+
+    Dynamic_Programming:
+      - Climbing Stairs
+      - House Robber
+      - Coin Change
+      - Longest Common Subsequence
+      - Edit Distance
+      - Burst Balloons
+
+    Greedy:
+      - Jump Game
+      - Jump Game II
+      - Gas Station
+      - Task Scheduler
+      - Non-overlapping Intervals
+
+    Monotonic_Stack:
+      - Daily Temperatures
+      - Next Greater Element
+      - Largest Rectangle in Histogram
+      - Trapping Rain Water
+
+    Heap:
+      - Kth Largest Element in an Array
+      - Find Median from Data Stream
+      - Merge K Sorted Lists
+      - Top K Frequent Elements
+
+    String_Algorithms:
+      - Find the Index of the First Occurrence in a String
+      - Repeated Substring Pattern
+      - Longest Palindromic Substring
+      - Implement Trie
