@@ -812,3 +812,26 @@ patterns:
       - Repeated Substring Pattern
       - Longest Palindromic Substring
       - Implement Trie
+
+  constraint_decoding_guide:
+    target_operations: "<= 10^8 per second"
+    rules:
+      - constraint: "Value <= 50 or 100 (Value << N)"
+        complexity: "O(V * N)"
+        algorithms: ["Value-to-index mapping", "Frequency arrays", "Bucket tracking", "State tracking by value"]
+        
+      - constraint: "N <= 20"
+        complexity: "O(2^N) or O(N!)"
+        algorithms: ["Bitmask DP", "Brute-force recursion", "Subsets/Permutations generation"]
+        
+      - constraint: "N <= 10^3 to 10^4"
+        complexity: "O(N^2)"
+        algorithms: ["Matrix DP", "Nested loops", "Pairwise combinations", "Floyd-Warshall"]
+        
+      - constraint: "N <= 10^5 to 10^6"
+        complexity: "O(N) or O(N log N)"
+        algorithms: ["Two Pointers", "Sliding Window", "Sorting", "Monotonic Stack", "Prefix Sums", "Segment Trees", "Hash Maps"]
+        
+      - constraint: "N <= 10^9 to 10^12"
+        complexity: "O(log N) or O(1)"
+        algorithms: ["Binary Search on Answer", "Bit Manipulation", "Math Formulas", "Matrix Exponentiation"]
