@@ -813,25 +813,30 @@ patterns:
       - Longest Palindromic Substring
       - Implement Trie
 
-  constraint_decoding_guide:
-    target_operations: "<= 10^8 per second"
-    rules:
-      - constraint: "Value <= 50 or 100 (Value << N)"
-        complexity: "O(V * N)"
-        algorithms: ["Value-to-index mapping", "Frequency arrays", "Bucket tracking", "State tracking by value"]
-        
-      - constraint: "N <= 20"
-        complexity: "O(2^N) or O(N!)"
-        algorithms: ["Bitmask DP", "Brute-force recursion", "Subsets/Permutations generation"]
-        
-      - constraint: "N <= 10^3 to 10^4"
-        complexity: "O(N^2)"
-        algorithms: ["Matrix DP", "Nested loops", "Pairwise combinations", "Floyd-Warshall"]
-        
-      - constraint: "N <= 10^5 to 10^6"
-        complexity: "O(N) or O(N log N)"
-        algorithms: ["Two Pointers", "Sliding Window", "Sorting", "Monotonic Stack", "Prefix Sums", "Segment Trees", "Hash Maps"]
-        
-      - constraint: "N <= 10^9 to 10^12"
-        complexity: "O(log N) or O(1)"
-        algorithms: ["Binary Search on Answer", "Bit Manipulation", "Math Formulas", "Matrix Exponentiation"]
+constraint_decoding_guide:
+  target_operations: "<= 10^8 per second"
+  rules:
+    - constraint: "Value <= 50 or 100 (Value << N)"
+      complexity: "O(V * N)"
+      explanation: "Exploits a change of perspective. The tiny range allows you to swap positions/elements for fixed array indices or buckets, neutralizing the depth or size of the data structure."
+      algorithms: ["Value-to-index mapping", "Frequency arrays", "Bucket tracking", "State tracking by value"]
+      
+    - constraint: "N <= 20"
+      complexity: "O(2^N) or O(N!)"
+      explanation: "Exploits the mathematical reality that 2^20 is only ~1 million operations. The problem author explicitly wants you to test every single subset or path permutation because a computer can handle it instantly at this size."
+      algorithms: ["Bitmask DP", "Brute-force recursion", "Subsets/Permutations generation"]
+      
+    - constraint: "N <= 10^3 to 10^4"
+      complexity: "O(N^2)"
+      explanation: "Exploits the 1-second execution window where up to 100 million operations pass safely. This signals that comparing every element against every other element using nested loops is perfectly valid."
+      algorithms: ["Matrix DP", "Nested loops", "Pairwise combinations", "Floyd-Warshall"]
+      
+    - constraint: "N <= 10^5 to 10^6"
+      complexity: "O(N) or O(N log N)"
+      explanation: "Exploits strict time limits to block brute force. Loops cannot be nested; you must process each element once or use tree-based splits (log N) to ensure total operations stay well under the 10^8 threshold."
+      algorithms: ["Two Pointers", "Sliding Window", "Sorting", "Monotonic Stack", "Prefix Sums", "Segment Trees", "Hash Maps"]
+      
+    - constraint: "N <= 10^9 to 10^12"
+      complexity: "O(log N) or O(1)"
+      explanation: "Exploits the fact that you cannot even loop from 1 to N a single time without instantly timing out. The solution cannot touch every element; it must actively discard half the search space at each step or rely purely on mathematical logic."
+      algorithms: ["Binary Search on Answer", "Bit Manipulation", "Math Formulas", "Matrix Exponentiation"]
