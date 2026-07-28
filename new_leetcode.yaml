@@ -272,6 +272,14 @@ patterns:
       - merge intervals after sorting
       - merge multiple sorted sources
 
+  Divide_And_Conquer:
+    - Divide and Conquer
+    - Closest Pair
+    - Count Inversions
+    - Merge Sort
+    - QuickSort
+    - Recursive problem splitting
+
   Recursion_And_Backtracking:
     Fundamental_Patterns:
       - choose / skip
@@ -292,6 +300,7 @@ patterns:
     Permutations_And_Arrangements:
       - Permutations
       - Permutations II
+      - K-Permutation
       - Letter Tile Possibilities
       - ordering under constraints
 
@@ -313,6 +322,7 @@ patterns:
       - Sudoku Solver
       - Matchsticks to Square
       - Beautiful Arrangement
+      - Branch and Bound
 
     Toolkit:
       State_Tracking:
@@ -335,7 +345,7 @@ patterns:
       Optimization:
         - memoization
         - iterative backtracking
-        - meet in the middle
+        - meet in the middle (DP + backtracking)
 
       Preprocessing:
         - sorting
@@ -429,6 +439,7 @@ patterns:
 
     Combinatorial_DP:
       - Unique Binary Search Trees
+      - Catalan-style counting
       - Distinct Subsequences
       - Combination Sum IV
       - counting ways with transitions
@@ -593,6 +604,7 @@ patterns:
       - Fast Power
       - Matrix Exponentiation
       - Combinatorics
+      - Catalan Numbers
       - Pascal's Triangle
       - Coordinate Compression
 
