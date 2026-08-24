@@ -664,6 +664,44 @@ patterns:
       - moving average from stream
       - recent event tracking
 
+  Game_Theory_And_Adversarial_Reasoning:
+    LeetCode_Game_Patterns:
+      - optimal play with two players
+      - first player / second player win state
+      - force win / force loss reasoning
+
+    Adversarial_Balancing_And_Invariants:
+      - force equality vs force imbalance
+      - sum / score difference tracking
+      - parity analysis
+      - mirror / cancellation strategy
+      - modulo-based forcing
+      - exact knife-edge win condition
+
+    Interval_And_Score_Difference_Games:
+      - optimal play on subarrays
+      - score difference DP
+      - left/right pick games
+      - interval game transitions
+
+    State_Search_Games:
+      - minimax with memoization
+      - bitmask game states
+      - recursive win/lose state search
+      - alpha-beta pruning intuition
+
+    Impartial_And_Take_Away_Games:
+      - Nim Game
+      - take-away games
+      - winning / losing states
+
+    Representative_Problems:
+      - Sum Game
+      - Predict the Winner
+      - Stone Game variants
+      - Can I Win
+      - Divisor Game
+
   Study_Order:
     Beginner:
       - Arrays
